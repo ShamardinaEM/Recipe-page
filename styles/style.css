@@ -21,7 +21,8 @@ body {
 }
 .wrapper {
     margin: 2em auto;
-    width: 40%;
+    margin-inline: auto;
+    width: min(100% - 1em, 65ch);
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -73,7 +74,7 @@ li span {
 }
 ul li {
     color: hsl(30, 10%, 34%);
-    padding-left: 1em;
+    padding-left: .7ch;
 }
 ul li::marker {
     font-size: 10px;
@@ -121,9 +122,9 @@ tr:last-child td {
     color: hsl(14, 45%, 36%);
     font-weight: 600;
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .wrapper {
         margin: 0;
         width: 100%;
     }
-}
+} */
